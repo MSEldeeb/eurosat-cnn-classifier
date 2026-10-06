@@ -1,0 +1,21 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install
+        run: |
+          pip install tensorflow-cpu==2.16.1 "keras>=3.3" "numpy<2" scikit-learn pandas matplotlib pillow pytest
+          pip install -e . --no-deps
+      - name: Run tests
+        run: pytest -q

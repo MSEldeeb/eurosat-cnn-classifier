@@ -1,0 +1,13 @@
+{
+  "model": "baseline",
+  "parameters": 1143242,
+  "epochs_run": 15,
+  "best_val_accuracy": 0.8770673871040344,
+  "training_minutes": 16.3,
+  "hardware": "CPU",
+  "settings": {
+    "epochs": 15,
+    "batch_size": 64,
+    "fraction": 1.0
+  }
+}

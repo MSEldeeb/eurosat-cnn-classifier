@@ -1,0 +1,167 @@
+{
+  "model": "improved",
+  "test_images": 4050,
+  "test_accuracy": 0.9667,
+  "macro_f1": 0.9664,
+  "per_class_f1": {
+    "AnnualCrop": 0.9529,
+    "Forest": 0.9866,
+    "HerbaceousVegetation": 0.9509,
+    "Highway": 0.9664,
+    "Industrial": 0.979,
+    "Pasture": 0.9735,
+    "PermanentCrop": 0.9277,
+    "Residential": 0.9831,
+    "River": 0.9604,
+    "SeaLake": 0.9833
+  },
+  "top_confusions": [
+    {
+      "true": "HerbaceousVegetation",
+      "predicted": "PermanentCrop",
+      "count": 16
+    },
+    {
+      "true": "AnnualCrop",
+      "predicted": "PermanentCrop",
+      "count": 14
+    },
+    {
+      "true": "PermanentCrop",
+      "predicted": "HerbaceousVegetation",
+      "count": 11
+    },
+    {
+      "true": "PermanentCrop",
+      "predicted": "AnnualCrop",
+      "count": 8
+    },
+    {
+      "true": "Residential",
+      "predicted": "Industrial",
+      "count": 7
+    }
+  ],
+  "confusion_matrix": [
+    [
+      425,
+      1,
+      3,
+      0,
+      0,
+      1,
+      14,
+      0,
+      4,
+      2
+    ],
+    [
+      0,
+      442,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      4
+    ],
+    [
+      1,
+      0,
+      426,
+      2,
+      1,
+      3,
+      16,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      360,
+      5,
+      1,
+      2,
+      0,
+      5,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      373,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      3,
+      2,
+      1,
+      0,
+      0,
+      294,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      11,
+      0,
+      1,
+      1,
+      353,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      3,
+      7,
+      0,
+      0,
+      436,
+      2,
+      0
+    ],
+    [
+      2,
+      1,
+      1,
+      4,
+      0,
+      2,
+      0,
+      0,
+      364,
+      1
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      5,
+      442
+    ]
+  ]
+}

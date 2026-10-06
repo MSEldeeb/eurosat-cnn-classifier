@@ -1,0 +1,13 @@
+{
+  "model": "improved",
+  "parameters": 577514,
+  "epochs_run": 30,
+  "best_val_accuracy": 0.9725993871688843,
+  "training_minutes": 162.1,
+  "hardware": "CPU",
+  "settings": {
+    "epochs": 30,
+    "batch_size": 64,
+    "fraction": 1.0
+  }
+}
